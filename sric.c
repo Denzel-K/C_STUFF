@@ -54,7 +54,7 @@ void open_menu(){
   scanf("%d", &opt);
 
   switch (opt){
-    case 0: 
+    case 0:
       printf("|--------------------------------------------------|\n");
       printf("|     =0=0=0=   Program has stopped   =0=0=0=      |\n");
       printf("|--------------------------------------------------|\n\n");
@@ -64,11 +64,11 @@ void open_menu(){
     case 1:
       reverse_num();
       break;
-    
+
     case 2:
       ages_array_ops();
       break;
-    
+
     default:
       printf("|-----------------------------------------------------|\n");
       printf("|   =X=X=X=  INVALID (Choose given options)  =X=X=X=  |\n");
@@ -102,7 +102,7 @@ void reverse_num(){
   printf("\n");
   printf("-> Initial number: %d\n", initNum);
   printf("-> Reversed number: %d\n\n", revNum);
-  
+
   success(1);
 
   open_menu();
@@ -135,11 +135,11 @@ void ages_array_ops(){
   }
   printf("]\n\n");
 
-  float ageAverage = ageSum / agesLength;
+  float ageAverage = (float)ageSum / agesLength;
   printf("-> Average age: %.2f\n", ageAverage);
   printf("-> Lowest age: %d\n", lowestAge);
   printf("-> Highest age: %d\n\n", highestAge);
-  
+
   success(2);
 
   open_menu();

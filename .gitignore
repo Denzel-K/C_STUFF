@@ -1,3 +1,9 @@
 *.exe
 /.vscode
 sric
+enums
+files
+memory
+recursion
+structures
+filename.txt
